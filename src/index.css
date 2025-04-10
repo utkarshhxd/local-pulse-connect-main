@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 226 25% 95%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 230 59% 42%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 223 60% 67%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 220 14% 80%;
+    --muted-foreground: 220 8% 46%;
+
+    --accent: 225 26% 74%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 230 59% 42%;
+
+    --radius: 0.5rem;
+    
+    /* Custom color scheme from the image */
+    --blue-dark: 228 59% 42%;    /* #3D52A0 */
+    --blue-medium: 223 60% 67%;  /* #7091E6 */
+    --blue-light: 220 26% 74%;   /* #8697C4 */
+    --lavender-light: 226 25% 87%; /* #ADBBDA */
+    --lavender-pale: 240 26% 93%; /* #EDE8F5 */
+
+    /* Status and urgency colors (keeping these as they're useful) */
+    --status-pending: 35 100% 50%;
+    --status-in-progress: 217 91% 60%;
+    --status-resolved: 160 84% 39%;
+    --urgency-low: 160 84% 39%;
+    --urgency-medium: 35 100% 50%;
+    --urgency-high: 0 84% 60%;
+  }
+
+  .dark {
+    --background: 228 59% 20%;   /* Darker version of the primary blue */
+    --foreground: 210 40% 98%;
+
+    --card: 228 30% 26%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 228 30% 26%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 223 60% 67%;      /* #7091E6 */
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 228 59% 42%;    /* #3D52A0 */
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 26% 50%;
+    --muted-foreground: 220 26% 80%;
+
+    --accent: 226 25% 87%;       /* #ADBBDA */
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 228 30% 40%;
+    --input: 228 30% 40%;
+    --ring: 223 60% 67%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
